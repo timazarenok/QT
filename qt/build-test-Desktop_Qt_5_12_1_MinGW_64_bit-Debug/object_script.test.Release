@@ -1,0 +1,15 @@
+release/main.o
+release/mainwindow.o
+release/database.o
+release/countrywindow.o
+release/brandwindow.o
+release/sizewindow.o
+release/sqlcomboboxmodel.o
+release/goodswindow.o
+release/moc_mainwindow.o
+release/moc_database.o
+release/moc_countrywindow.o
+release/moc_brandwindow.o
+release/moc_sizewindow.o
+release/moc_sqlcomboboxmodel.o
+release/moc_goodswindow.o

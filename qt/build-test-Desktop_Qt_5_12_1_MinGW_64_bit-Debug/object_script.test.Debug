@@ -1,0 +1,15 @@
+debug/main.o
+debug/mainwindow.o
+debug/database.o
+debug/countrywindow.o
+debug/brandwindow.o
+debug/sizewindow.o
+debug/sqlcomboboxmodel.o
+debug/goodswindow.o
+debug/moc_mainwindow.o
+debug/moc_database.o
+debug/moc_countrywindow.o
+debug/moc_brandwindow.o
+debug/moc_sizewindow.o
+debug/moc_sqlcomboboxmodel.o
+debug/moc_goodswindow.o
