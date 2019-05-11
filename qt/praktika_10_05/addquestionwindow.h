@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include "database.h"
 #include "comboboxmodel.h"
+#include <QVariantList>
+#include <QMessageBox>
 
 
 namespace Ui {
@@ -19,8 +21,11 @@ public:
     ~addQuestionWindow();
 private:
     comboBoxmodel* model;
+    QSqlTableModel* table;
+    void setTableModel();
+    void setTableView();
 public slots:
-    //void slotAddQuestion();
+    void slotAddQuestion();
 
 private:
     Ui::addQuestionWindow *ui;

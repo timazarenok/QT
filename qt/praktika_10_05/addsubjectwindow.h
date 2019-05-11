@@ -15,12 +15,17 @@ class addSubjectWindow : public QMainWindow
 public:
     explicit addSubjectWindow(QWidget *parent = nullptr);
     ~addSubjectWindow();
+    QSqlTableModel* model;
+
 public slots:
     void slotaddSubject();
 signals:
 
 private:
     Ui::addSubjectWindow *ui;
+    void setTableModel();
+    void setTableView();
+
 };
 
 #endif // ADDSUBJECTWINDOW_H
