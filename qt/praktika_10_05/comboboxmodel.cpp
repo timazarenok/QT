@@ -11,11 +11,6 @@ comboBoxmodel::comboBoxmodel(QObject *parent)
     }
 }
 
-QVariant comboBoxmodel::headerData(int section, Qt::Orientation orientation, int role) const
-{
-
-}
-
 int comboBoxmodel::rowCount(const QModelIndex &parent) const
 {
     return container.count();
