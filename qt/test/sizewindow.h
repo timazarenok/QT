@@ -19,6 +19,8 @@ class SizeWindow : public QMainWindow
 public:
     explicit SizeWindow(QWidget *parent = nullptr);
     ~SizeWindow();
+    QSqlTableModel* table;
+
 signals:
 
 public slots:
@@ -26,6 +28,8 @@ public slots:
 
 private:
     Ui::SizeWindow *ui;
+    void setTableModel();
+    void setTableView();
 };
 
 #endif // SIZEWINDOW_H

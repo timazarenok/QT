@@ -6,6 +6,7 @@
 #include "countrywindow.h"
 #include "brandwindow.h"
 #include "sizewindow.h"
+#include "goodswindow.h"
 
 namespace Ui {
 class MainWindow;
@@ -21,12 +22,15 @@ public:
     void slotStartCountryWindow();
     void slotStartBrandWindow();
     void slotsStartSizeWindow();
+    void slotsStartGoodsWindow();
 
 private:
     Ui::MainWindow *ui;
     CountryWindow *cw;
     BrandWindow *bw;
     SizeWindow *sw;
+    GoodsWindow *gw;
+
 };
 
 #endif // MAINWINDOW_H

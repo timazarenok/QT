@@ -24,11 +24,7 @@ void Database::createTables()
 
 void Database::insertIntoTables()
 {
-    insertIntoTableCountries(QList<QVariant>{QVariant("Belarus")});
-    insertIntoTableBrand(QList<QVariant>{QVariant("Adidas")});
-    insertIntoTableGoods(QList<QVariant>{QVariant("T-shirt"), QVariant(1), QVariant(1), QVariant(35)});
-    insertIntoTableSizes(QList<QVariant>{QVariant("M")});
-    insertIntoTableStorage(QList<QVariant>{QVariant(1), QVariant(1)});
+
 }
 
 bool Database::openDataBase()

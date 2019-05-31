@@ -1,14 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-05-06T00:37:53
+# Project created by QtCreator 2019-05-18T22:13:54
 #
 #-------------------------------------------------
 
 QT       += core gui
-QT += sql
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = test
+TARGET = visualalgorithms
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -22,37 +22,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-CONFIG += c++17
+CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    database.cpp \
-    countrywindow.cpp \
-    brandwindow.cpp \
-    sizewindow.cpp \
-    sqlcomboboxmodel.cpp \
-    goodswindow.cpp \
-    sqlcomboboxmodelcountry.cpp
+        mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h \
-    database.h \
-    util.h \
-    queries.h \
-    countrywindow.h \
-    brandwindow.h \
-    sizewindow.h \
-    sqlcomboboxmodel.h \
-    goodswindow.h \
-    sqlcomboboxmodelcountry.h
+        mainwindow.h
 
 FORMS += \
-        mainwindow.ui \
-    countrywindow.ui \
-    brandwindow.ui \
-    sizewindow.ui \
-    goodswindow.ui
+        mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

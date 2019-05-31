@@ -17,6 +17,8 @@ class BrandWindow : public QMainWindow
 public:
     explicit BrandWindow(QWidget *parent = nullptr);
     ~BrandWindow();
+    QSqlTableModel* table;
+
 signals:
 
  public slots:
@@ -24,6 +26,8 @@ signals:
 
 private:
     Ui::BrandWindow *ui;
+    void setTableModel();
+    void setTableView();
 };
 
 #endif // BRANDWINDOW_H

@@ -19,7 +19,7 @@ g_size TEXT UNIQUE\
 
 #define GOODS_TABLE "create table Goods(\
 id INTEGER PRIMARY KEY AUTOINCREMENT,\
-g_name TEXT,\
+g_name TEXT UNIQUE,\
 g_brand INTEGER,\
 origin INTEGER,\
 price REAL,\
@@ -37,6 +37,7 @@ FOREIGN KEY (goods) REFERENCES Goods (id)\
 )"
 
 #define SELECT_ALL_BRANDS "select id, brand_name from Brand"
+#define SELECT_ALL_COUNTRIES "select id, c_name from Countries"
 
 
 #endif // QUERIES_H

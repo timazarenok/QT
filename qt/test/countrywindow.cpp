@@ -6,7 +6,23 @@ CountryWindow::CountryWindow(QWidget *parent) :
     ui(new Ui::CountryWindow)
 {
     ui->setupUi(this);
+    setTableModel();
+    setTableView();
     connect(ui->pushButton, &QPushButton::clicked, this, &CountryWindow::slotAddCountry);
+}
+
+void CountryWindow::setTableModel()
+{
+    table = new QSqlTableModel;
+    table->setTable("Countries");
+    table->setHeaderData(1, Qt::Horizontal, QVariant("Countries"));
+    table->select();
+}
+
+void CountryWindow::setTableView()
+{
+    ui->tableView->setModel(table);
+    ui->tableView->setColumnHidden(0, true);
 }
 
 CountryWindow::~CountryWindow()
@@ -23,4 +39,5 @@ void CountryWindow::slotAddCountry()
     else {
         QMessageBox::information(this, "error", "error");
     }
+    table->select();
 }

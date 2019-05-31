@@ -6,6 +6,8 @@ SizeWindow::SizeWindow(QWidget *parent) :
     ui(new Ui::SizeWindow)
 {
     ui->setupUi(this);
+    setTableModel();
+    setTableView();
     connect(ui->pushButton, &QPushButton::clicked, this, &SizeWindow::slotAddSize);
 }
 
@@ -18,9 +20,25 @@ void SizeWindow::slotAddSize()
 {
     if(Database::insertIntoTableSizes(QList<QVariant>{ui->lineEdit->text()}))
     {
-        QMessageBox::information(this, "u are succesfully added", "info window");
+        QMessageBox::information(this, "info window", "u are succesfully addedv");
     }
     else {
         QMessageBox::information(this, "error", "error");
     }
+    table->select();
 }
+
+
+void SizeWindow::setTableModel()
+{
+    table = new QSqlTableModel;
+    table->setTable("Sizes");
+    table->setHeaderData(1, Qt::Horizontal, QVariant("Sizes"));
+    table->select();
+}
+void SizeWindow::setTableView()
+{
+    ui->tableView->setModel(table);
+    ui->tableView->setColumnHidden(0, true);
+}
+

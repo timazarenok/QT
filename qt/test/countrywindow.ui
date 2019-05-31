@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>443</width>
-    <height>174</height>
+    <width>450</width>
+    <height>448</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>30</y>
+      <y>300</y>
       <width>131</width>
       <height>31</height>
      </rect>
@@ -27,14 +27,24 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>80</y>
-      <width>93</width>
-      <height>28</height>
+      <x>150</x>
+      <y>340</y>
+      <width>111</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>add country</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>21</y>
+      <width>381</width>
+      <height>261</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -43,7 +53,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>443</width>
+     <width>450</width>
      <height>26</height>
     </rect>
    </property>

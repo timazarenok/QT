@@ -17,6 +17,8 @@ class CountryWindow : public QMainWindow
 
 public:
     explicit CountryWindow(QWidget *parent = nullptr);
+    QSqlTableModel* table;
+
     ~CountryWindow();
 signals:
 
@@ -25,6 +27,8 @@ public slots:
 
 private:
     Ui::CountryWindow *ui;
+    void setTableModel();
+    void setTableView();
 };
 
 #endif // COUNTRYWINDOW_H
